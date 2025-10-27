@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EV Charging Map</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00d6c1",
+            "background-light": "#f0f7f7",
+            "background-dark": "#0a1a1a",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-screen w-full flex-col overflow-hidden">
+<div class="absolute inset-0 h-full w-full">
+<div class="h-full w-full bg-cover bg-center" data-alt="A desaturated map of a city showing streets and blocks." data-location="Los Angeles" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBXPH0hYbIYnvSEmQBngjcBEXj-y1_4hBWCnDOzrtCz8A0t1rqAhrEFE-wW81lRQpMBM7tj_GNHh3H0OnU7uAavg8idYLvIgxNen8EgzrFlXmFDSAFgKj9AcnArtWZ8vJTgv3Hz94mhZX9c_NNxtp6Xm8dQEVijle4ybr4p74LepM6V5eyP-NzO8oYTIZfxyrfxIp8bU78gM3aAaKwhBOwoZGK5ognzaANseHIYOg0r2-CiEfaU4Oh4QMV0KyyAvN99OqxuGZVTzJk");'></div>
+</div>
+<div class="absolute inset-0">
+<div class="absolute" style="top: 40%; left: 30%;">
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center rounded-lg bg-primary px-3 py-1.5 shadow-lg">
+<span class="material-symbols-outlined text-sm text-background-dark mr-1">bolt</span>
+<p class="text-sm font-bold text-background-dark">92%</p>
+</div>
+<div class="h-3 w-3 rotate-45 transform rounded-sm bg-primary"></div>
+</div>
+</div>
+<div class="absolute" style="top: 55%; left: 70%;">
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center rounded-lg bg-orange-400 px-3 py-1.5 shadow-lg">
+<span class="material-symbols-outlined text-sm text-background-dark mr-1">bolt</span>
+<p class="text-sm font-bold text-background-dark">34%</p>
+</div>
+<div class="h-3 w-3 rotate-45 transform rounded-sm bg-orange-400"></div>
+</div>
+</div>
+<div class="absolute" style="top: 65%; left: 20%;">
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center rounded-lg bg-zinc-500 px-3 py-1.5 shadow-lg">
+<span class="material-symbols-outlined text-sm text-white mr-1">bolt</span>
+<p class="text-sm font-bold text-white">0%</p>
+</div>
+<div class="h-3 w-3 rotate-45 transform rounded-sm bg-zinc-500"></div>
+</div>
+</div>
+</div>
+<div class="absolute top-0 left-0 right-0 p-4 pt-8 md:p-6">
+<div class="flex items-center gap-3">
+<div class="relative flex h-12 w-full flex-grow">
+<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
+<span class="material-symbols-outlined text-teal-200/60">search</span>
+</div>
+<input class="form-input h-full w-full rounded-lg border-none bg-background-dark/80 pl-12 pr-4 text-white placeholder:text-teal-200/60 focus:outline-none focus:ring-2 focus:ring-primary/50" placeholder="Search by address or city" type="text"/>
+</div>
+<button class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-background-dark/80">
+<span class="material-symbols-outlined text-white">tune</span>
+</button>
+</div>
+</div>
+<div class="absolute right-4 bottom-1/2 mb-4 flex translate-y-1/2 flex-col gap-3 md:right-6">
+<button class="flex size-12 items-center justify-center rounded-lg bg-background-dark/80 shadow-lg">
+<span class="material-symbols-outlined text-white">my_location</span>
+</button>
+<button class="flex size-12 items-center justify-center rounded-lg bg-background-dark/80 shadow-lg">
+<span class="material-symbols-outlined text-white">list</span>
+</button>
+</div>
+<div class="absolute inset-x-0 bottom-0 flex flex-col">
+<div class="flex flex-col items-stretch rounded-t-xl bg-background-light dark:bg-background-dark shadow-[0_-4px_16px_rgba(0,0,0,0.2)]">
+<div class="flex h-5 w-full cursor-grab items-center justify-center pt-3">
+<div class="h-1 w-9 rounded-full bg-zinc-300 dark:bg-zinc-700"></div>
+</div>
+<div class="flex flex-col p-4 pt-2">
+<h2 class="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">Trailer #A-123</h2>
+<p class="text-sm text-zinc-500 dark:text-zinc-400">Last updated: just now</p>
+<div class="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 border-b border-t border-zinc-200 dark:border-zinc-800 py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">battery_6_bar</span>
+<div class="flex flex-col">
+<span class="text-sm text-zinc-500 dark:text-zinc-400">Battery</span>
+<span class="font-bold text-zinc-900 dark:text-white">92%</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">electric_meter</span>
+<div class="flex flex-col">
+<span class="text-sm text-zinc-500 dark:text-zinc-400">Status</span>
+<span class="font-bold text-zinc-900 dark:text-white">Available</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">social_distance</span>
+<div class="flex flex-col">
+<span class="text-sm text-zinc-500 dark:text-zinc-400">Distance</span>
+<span class="font-bold text-zinc-900 dark:text-white">0.8 mi away</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">payments</span>
+<div class="flex flex-col">
+<span class="text-sm text-zinc-500 dark:text-zinc-400">Price</span>
+<span class="font-bold text-zinc-900 dark:text-white">$0.45/kWh</span>
+</div>
+</div>
+</div>
+<div class="mt-4">
+<h3 class="text-base font-bold text-zinc-900 dark:text-white">Connector Types</h3>
+<div class="mt-2 flex items-center gap-4">
+<div class="flex items-center gap-2 rounded bg-zinc-100 dark:bg-zinc-800 px-3 py-1.5">
+<span class="material-symbols-outlined text-sm text-zinc-600 dark:text-zinc-300">ev_charger</span>
+<p class="text-sm font-medium text-zinc-800 dark:text-zinc-200">CCS</p>
+</div>
+<div class="flex items-center gap-2 rounded bg-zinc-100 dark:bg-zinc-800 px-3 py-1.5">
+<span class="material-symbols-outlined text-sm text-zinc-600 dark:text-zinc-300">ev_charger</span>
+<p class="text-sm font-medium text-zinc-800 dark:text-zinc-200">CHAdeMO</p>
+</div>
+</div>
+</div>
+<div class="mt-6 flex gap-3">
+<a href="trailer details and booking.html" class="flex h-14 flex-1 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">bookmark_add</span>
+<span class="text-base font-bold leading-normal tracking-[0.015em]">Reserve</span>
+</a>
+<a href="trailer details and booking.html" class="flex h-14 flex-1 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary text-background-dark">
+<span class="material-symbols-outlined">assistant_navigation</span>
+<span class="text-base font-bold leading-normal tracking-[0.015em]">Get Directions</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 h-20 bg-white dark:bg-slate-900/70 border-t border-slate-200 dark:border-slate-800 flex items-center justify-around text-slate-500 dark:text-slate-400">
+    <a href="map and trailer location.html" class="flex flex-col items-center justify-center gap-1 text-primary">
+        <span class="material-symbols-outlined">map</span>
+        <p class="text-xs">Map</p>
+    </a>
+    <a href="sun points.html" class="flex flex-col items-center justify-center gap-1">
+        <span class="material-symbols-outlined">stars</span>
+        <p class="text-xs">SunPoints</p>
+    </a>
+    <a href="payment and trans.html" class="flex flex-col items-center justify-center gap-1">
+        <span class="material-symbols-outlined">account_balance_wallet</span>
+        <p class="text-xs">Wallet</p>
+    </a>
+    <a href="welcome.html" class="flex flex-col items-center justify-center gap-1">
+        <span class="material-symbols-outlined">person</span>
+        <p class="text-xs">Profile</p>
+    </a>
+</div>
+</div>
+
+</body></html>

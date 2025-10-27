@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EV Charging Trailer Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00a79d",
+            "background-light": "#f0f7f7",
+            "background-dark": "#0a1a19",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative w-full flex-col group/design-root overflow-x-hidden">
+<div class="sticky top-0 z-20 flex items-center justify-between bg-background-light/80 dark:bg-background-dark/80 p-4 pb-2 backdrop-blur-sm">
+<a href="map and trailer location.html" class="text-slate-800 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</a>
+<h1 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Trailer Volt-07</h1>
+<div class="w-10"></div>
+</div>
+<div class="px-4">
+<div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-60" data-alt="A modern EV charging trailer with solar panels on its roof, parked in a sunny, urban environment." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD01HKx64d5gpxwMJr6S3g_XLU7SuzzGlNmSurkYVar2qU-pC2V9sgEoigqZKC2n2RDZRBtEvll2tMWlT0VO3o5Upv_B5j8khIKkopvzXmW_twjD5HxxDkSFhk89UugMQMclKJzOVOfOhmyI9Z-tg10c-6816mcoz3mSljhDgJp3N7pfq9pomI4qj0swpRF177n7oH5IfEjTj2CqbXonYbhVzzKvmLgICg1Tq4l0uNURAmSKtmc1c7bYC7ldF8VGdVXTVCeLECrRjg");'></div>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Live Status</h2>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 px-4">
+<div class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-4 flex-col">
+<span class="material-symbols-outlined text-primary text-3xl">solar_power</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-white text-base font-bold leading-tight">12 kW</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Solar Generation</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-4 flex-col">
+<span class="material-symbols-outlined text-primary text-3xl">battery_charging_full</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-white text-base font-bold leading-tight">85%</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Stored Energy</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-4 flex-col col-span-2 sm:col-span-1">
+<span class="material-symbols-outlined text-primary text-3xl">ev_charger</span>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-white text-base font-bold leading-tight">3 / 4</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal">Chargers Available</p>
+</div>
+</div>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-6">Details</h2>
+<div class="flex flex-col gap-3 px-4">
+<div class="flex items-center gap-4 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-4">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 text-2xl">cable</span>
+<div class="flex flex-col">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Charger Types</p>
+<p class="text-slate-900 dark:text-white font-medium">CCS, CHAdeMO</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-4">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 text-2xl">location_on</span>
+<div class="flex flex-col">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Location</p>
+<p class="text-slate-900 dark:text-white font-medium">123 Market St, San Francisco</p>
+</div>
+</div>
+<div class="flex items-center gap-4 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 p-4">
+<span class="material-symbols-outlined text-slate-500 dark:text-slate-400 text-2xl">payments</span>
+<div class="flex flex-col">
+<p class="text-slate-500 dark:text-slate-400 text-sm">Pricing</p>
+<p class="text-slate-900 dark:text-white font-medium">$0.45 / kWh</p>
+</div>
+</div>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-6">Select a Time Slot</h2>
+<div class="flex gap-3 overflow-x-auto px-4 pb-4 snap-x snap-mandatory">
+<div class="flex flex-col items-center justify-center gap-1 rounded-full bg-primary/20 dark:bg-primary/20 p-3 w-16 h-16 shrink-0 snap-center">
+<p class="text-primary font-bold text-sm">Wed</p>
+<p class="text-primary font-bold text-lg">15</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 rounded-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 p-3 w-16 h-16 shrink-0 snap-center">
+<p class="text-slate-500 dark:text-slate-400 font-medium text-sm">Thu</p>
+<p class="text-slate-900 dark:text-white font-bold text-lg">16</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 rounded-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 p-3 w-16 h-16 shrink-0 snap-center">
+<p class="text-slate-500 dark:text-slate-400 font-medium text-sm">Fri</p>
+<p class="text-slate-900 dark:text-white font-bold text-lg">17</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 rounded-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 p-3 w-16 h-16 shrink-0 snap-center">
+<p class="text-slate-500 dark:text-slate-400 font-medium text-sm">Sat</p>
+<p class="text-slate-900 dark:text-white font-bold text-lg">18</p>
+</div>
+<div class="flex flex-col items-center justify-center gap-1 rounded-full bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 p-3 w-16 h-16 shrink-0 snap-center">
+<p class="text-slate-500 dark:text-slate-400 font-medium text-sm">Sun</p>
+<p class="text-slate-900 dark:text-white font-bold text-lg">19</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-3 px-4 pb-28">
+<button class="rounded-lg p-3 text-center font-semibold text-slate-900 dark:text-white bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10">10:00 AM</button>
+<button class="rounded-lg p-3 text-center font-semibold text-slate-900 dark:text-white bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10">10:30 AM</button>
+<button class="rounded-lg p-3 text-center font-semibold text-slate-400 dark:text-slate-600 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 cursor-not-allowed">11:00 AM</button>
+<button class="rounded-lg p-3 text-center font-semibold text-white dark:text-background-dark bg-primary">11:30 AM</button>
+<button class="rounded-lg p-3 text-center font-semibold text-slate-900 dark:text-white bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10">12:00 PM</button>
+<button class="rounded-lg p-3 text-center font-semibold text-slate-900 dark:text-white bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10">12:30 PM</button>
+<button class="rounded-lg p-3 text-center font-semibold text-slate-400 dark:text-slate-600 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 cursor-not-allowed">01:00 PM</button>
+<button class="rounded-lg p-3 text-center font-semibold text-slate-900 dark:text-white bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10">01:30 PM</button>
+</div>
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background-light dark:from-background-dark to-transparent">
+<button class="w-full rounded-xl bg-primary py-4 px-5 text-center text-base font-bold text-white dark:text-background-dark shadow-lg shadow-primary/20">Reserve Slot - $25 Deposit</button>
+</div>
+</div>
+
+</body></html>
